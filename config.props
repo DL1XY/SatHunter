@@ -1,0 +1,13 @@
+tle_update_type = 2
+tle_zip = http://www.tle.info/data/TLE.ZIP
+tle_file = /output/tle/TLE.txt
+tle_tmp_folder = tle
+latitude=52.643708
+longitude=13.188314
+heightAMSL=50
+sats = NOAA 18:137912500,NOAA 15:137620000,ISS (ZARYA):0
+date_format = yyyyMMdd_HHmmss
+min_elevation = 5
+timer_intervall=10000
+tle_update_hours=24
+
