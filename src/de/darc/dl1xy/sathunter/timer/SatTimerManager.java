@@ -5,11 +5,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Timer;
 
-import uk.me.g4dpz.satellite.GroundStationPosition;
-import uk.me.g4dpz.satellite.InvalidTleException;
-import uk.me.g4dpz.satellite.PassPredictor;
-import uk.me.g4dpz.satellite.SatNotFoundException;
-import uk.me.g4dpz.satellite.SatPassTime;
+import com.github.amsacode.predict4java.GroundStationPosition;
+import com.github.amsacode.predict4java.PassPredictor;
+import com.github.amsacode.predict4java.SatNotFoundException;
+import com.github.amsacode.predict4java.SatPassTime;
 import de.darc.dl1xy.sathunter.SatHunter;
 import de.darc.dl1xy.sathunter.satellite.MetaSatellite;
 import de.darc.dl1xy.sathunter.ui.BullsEyeRenderer;
@@ -52,8 +51,7 @@ public class SatTimerManager implements Runnable{
 					
 				}
 			} 
-			catch (IllegalArgumentException | InvalidTleException
-					| SatNotFoundException e) 
+			catch (IllegalArgumentException |SatNotFoundException e) 
 			{
 			
 				e.printStackTrace();

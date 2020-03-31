@@ -21,12 +21,11 @@ import java.util.Locale;
 
 import javax.imageio.ImageIO;
 
-import uk.me.g4dpz.satellite.GroundStationPosition;
-import uk.me.g4dpz.satellite.InvalidTleException;
-import uk.me.g4dpz.satellite.PassPredictor;
-import uk.me.g4dpz.satellite.SatNotFoundException;
-import uk.me.g4dpz.satellite.SatPassTime;
-import uk.me.g4dpz.satellite.SatPos;
+import com.github.amsacode.predict4java.GroundStationPosition;
+import com.github.amsacode.predict4java.PassPredictor;
+import com.github.amsacode.predict4java.SatNotFoundException;
+import com.github.amsacode.predict4java.SatPassTime;
+import com.github.amsacode.predict4java.SatPos;
 import de.darc.dl1xy.sathunter.SatHunter;
 import de.darc.dl1xy.sathunter.satellite.MetaSatellite;
 import de.darc.dl1xy.sathunter.util.Coordinate;
@@ -69,8 +68,7 @@ public class BullsEyeRenderer {
 		
 		try {
 			this.passPredictor = new PassPredictor(metaSat.sat.getTLE(), gsp);
-		} catch (IllegalArgumentException | InvalidTleException
-				| SatNotFoundException e) {
+		} catch (IllegalArgumentException | SatNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -181,7 +179,7 @@ public class BullsEyeRenderer {
 					w.downlinkFrequency = passPredictor.getDownlinkFreq(metaSat.downlinkFrequency , p.getTime());
 				if (metaSat.uplinkFrequency > 0 && passPredictor != null)
 					w.uplinkFrequency = passPredictor.getDownlinkFreq(metaSat.uplinkFrequency , p.getTime());
-			} catch (InvalidTleException | SatNotFoundException e) {
+			} catch (SatNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}

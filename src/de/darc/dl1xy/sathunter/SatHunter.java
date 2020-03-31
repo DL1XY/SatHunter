@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Timer;
 
-import uk.me.g4dpz.satellite.GroundStationPosition;
-import uk.me.g4dpz.satellite.TLE;
+import com.github.amsacode.predict4java.GroundStationPosition;
+import com.github.amsacode.predict4java.TLE;
 import de.darc.dl1xy.sathunter.satellite.MetaSatellite;
 import de.darc.dl1xy.sathunter.timer.SatTimerManager;
 import de.darc.dl1xy.sathunter.timer.TLEZipTimerTask;
@@ -46,9 +46,6 @@ public class SatHunter {
 	
 		sh.init();	
 		sh.initTimers();
-		
-		
-		
 		
 	}
 	

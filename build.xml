@@ -39,7 +39,7 @@
     </target>
  
     <target name="compile" depends="init,copyfiles" description="compile classes">
-        <javac destdir="${bin}" srcdir="${tempsrcdir}"  encoding="iso-8859-1" debug="on" debuglevel="lines,vars,source" classpath="${libs}/commons-lang-2.1.jar:${libs}/commons-logging-1.1.1.jar:${libs}/predict4java_1.1.1.jar">
+        <javac destdir="${bin}" srcdir="${tempsrcdir}"  encoding="iso-8859-1" debug="on" debuglevel="lines,vars,source" classpath="${libs}/commons-lang-2.1.jar:${libs}/commons-logging-1.1.1.jar:${libs}/predict4java-1.3.2-SNAPSHOT.jar">
         
         </javac>
     </target>
@@ -56,13 +56,13 @@
     	                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
     	                <attribute name="Rsrc-Main-Class" value="${main-class}"/>
     	                <attribute name="Class-Path" value="."/>
-    	                <attribute name="Rsrc-Class-Path" value="./ commons-lang-2.1.jar commons-logging-1.1.1.jar predict4java_1.1.1.jar"/>
+    	                <attribute name="Rsrc-Class-Path" value="./ commons-lang-2.1.jar commons-logging-1.1.1.jar predict4java-1.3.2-SNAPSHOT.jar"/>
     	            </manifest>
     	            <zipfileset src="jar-in-jar-loader.zip"/>
     	            <fileset dir="${bin}"/>    	 	 		
     	            <zipfileset dir="libs" includes="commons-lang-2.1.jar"/>
     	            <zipfileset dir="libs" includes="commons-logging-1.1.1.jar"/>
-    	            <zipfileset dir="libs" includes="predict4java_1.1.1.jar"/>
+    	            <zipfileset dir="libs" includes="predict4java-1.3.2-SNAPSHOT.jar"/>
     	           
     	        </jar>
     	  

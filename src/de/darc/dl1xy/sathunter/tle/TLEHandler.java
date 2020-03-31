@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import uk.me.g4dpz.satellite.TLE;
+import com.github.amsacode.predict4java.TLE;
 
 public class TLEHandler {
 

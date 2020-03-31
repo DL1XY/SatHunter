@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import uk.me.g4dpz.satellite.Satellite;
-import uk.me.g4dpz.satellite.SatelliteFactory;
-import uk.me.g4dpz.satellite.TLE;
+import com.github.amsacode.predict4java.Satellite;
+import com.github.amsacode.predict4java.SatelliteFactory;
+import com.github.amsacode.predict4java.TLE;
 import de.darc.dl1xy.sathunter.tle.TLEHandler;
 
 public class MetaSatellite {

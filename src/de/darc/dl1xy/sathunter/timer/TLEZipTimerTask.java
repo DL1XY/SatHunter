@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.TimerTask;
 
-import uk.me.g4dpz.satellite.GroundStationPosition;
+import com.github.amsacode.predict4java.GroundStationPosition;
 import de.darc.dl1xy.sathunter.SatHunter;
 import de.darc.dl1xy.sathunter.satellite.MetaSatellite;
 import de.darc.dl1xy.sathunter.tle.TLEHandler;

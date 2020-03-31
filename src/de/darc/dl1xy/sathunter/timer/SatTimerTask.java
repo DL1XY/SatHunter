@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Map;
 import java.util.TimerTask;
 
-import uk.me.g4dpz.satellite.SatPassTime;
+import com.github.amsacode.predict4java.SatPassTime;
 import de.darc.dl1xy.sathunter.SatHunter;
 import de.darc.dl1xy.sathunter.satellite.MetaSatellite;
 import de.darc.dl1xy.sathunter.util.Debug;
